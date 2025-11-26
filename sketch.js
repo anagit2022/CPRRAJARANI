@@ -25,11 +25,7 @@ window.onload = () => {
   rajaBtn.onclick = () => {
     genderState = 1;           // ✔ Raja
   introAudio.play();
-};
-
-
-
-    console.log("Gender:", genderState);
+  console.log("Gender:", genderState);
 
     gender.style.display = "none";
     intro.style.display = "flex";
