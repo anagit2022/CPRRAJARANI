@@ -6,6 +6,9 @@ window.onload = () => {
   const gender = document.getElementById("gender");
   const intro = document.getElementById("intro");
   const checkdanger = document.getElementById("checkdanger");
+  const introAudio = document.getElementById("introAudio");
+
+
 
   // Buttons
   const beginBtn = document.getElementById("beginBtn");
@@ -21,6 +24,11 @@ window.onload = () => {
 
   rajaBtn.onclick = () => {
     genderState = 1;           // ✔ Raja
+  introAudio.play();
+};
+
+};
+
     console.log("Gender:", genderState);
 
     gender.style.display = "none";
@@ -29,6 +37,7 @@ window.onload = () => {
 
   raniBtn.onclick = () => {
     genderState = 0;           // ✔ Rani
+    introAudio.play();
     console.log("Gender:", genderState);
 
     gender.style.display = "none";
