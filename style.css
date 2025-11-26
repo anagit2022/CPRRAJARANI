@@ -1,0 +1,63 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background: #F25C3B;   /* your orange background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#gender  {
+  flex-direction: column;
+  gap: 20px; /* space between image and buttons */
+}
+.gender-buttons,.danger-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;          /* space between the two buttons */
+  width: 100%;
+}
+.checkd{
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+
+  margin-bottom: 40px;
+  margin-top: -80px;   /* move upward */
+}
+#rajaBtn,
+#raniBtn,#yesBtn,#noBtn {
+  width: 40%;         /* responsive width */
+  max-width: 150px;   /* never too big */
+  height: auto;
+  cursor: pointer;
+}
+.bubble {
+  width: 100%;          /* responsive width */
+  max-width: 350px;    /* never grow too big */
+  height: auto;
+  margin-bottom: 40px; /* space above button */
+}
+.begin-btn {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  cursor: pointer;
+}
+.startBtn {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  cursor: pointer;
+}
+
+.screen {
+  display: none;
+}
+
+#begin1 {
+  display: flex;   /* show first screen by default */
+}
