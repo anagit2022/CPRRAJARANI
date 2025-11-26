@@ -44,6 +44,6 @@ window.onload = () => {
 
     intro.style.display = "none";
     checkdanger.style.display = "flex";
-    introAudio.play();
+    introAudio.stop();
   };
 };
