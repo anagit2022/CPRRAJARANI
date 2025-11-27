@@ -16,17 +16,46 @@ html, body {
   justify-content: center;
   position: relative;
 }
+.skinscreen { 
+width: 100vw; 
+height: 100vh; 
+background: #FFC5B7; /* your orange background */ 
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+justify-content: center; 
+position: relative; }
+
 
 #gender  {
   flex-direction: column;
   gap: 20px; /* space between image and buttons */
 }
-.gender-buttons,.danger-buttons {
+
+.dangerbubble img {
+  width: 80vw;
+  max-width: 380px;
+  height: auto;
+  margin-top: 10vh;
+}
+
+.danger-buttons,.gender-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;          /* space between the two buttons */
+  gap: 20px;          /* space between yes and no buttons */
   width: 100%;
+  margin-top: 10vh;   /* THIS moves buttons DOWN from bubble */
+  margin-bottom: 2vh; /* THIS controls distance from bottom of screen */
+}
+.response-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;          /* space between yes and no buttons */
+  width: 100%;
+  margin-top:40vh;   /* THIS moves buttons DOWN from bubble */
+  margin-bottom: -8vh; /* THIS controls distance from bottom of screen */
 }
 .checkd{
   width: 90%;
@@ -36,13 +65,7 @@ html, body {
   margin-bottom: 40px;
   margin-top: -120px;   /* move upward */
 }
-#rajaBtn,
-#raniBtn,#yesBtn,#noBtn {
-  width: 40%;         /* responsive width */
-  max-width: 150px;   /* never too big */
-  height: auto;
-  cursor: pointer;
-}
+
 .bubble {
   width: 100%;          /* responsive width */
   max-width: 350px;    /* never grow too big */
@@ -65,6 +88,14 @@ html, body {
 .screen {
   display: none;
 }
+#responseTitle,#dangerTitle,#breathTitle { 
+position: absolute; 
+top: 5vh; 
+left: 5vw; } 
+#begin1 { 
+display: flex; /* show first screen by default */ 
+}
+
 
 #begin1 {
   display: flex;   /* show first screen by default */
